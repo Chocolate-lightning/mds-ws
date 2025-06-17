@@ -1,20 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {Component, Input, Output, EventEmitter, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'mds-btn',
-  imports: [CommonModule, NgbModule],
-  // templateUrl: './button.component.html',
-  template: ` <button
-  type="button"
-  (click)="onClick.emit($event)"
-  [ngClass]="classes"
-  [ngStyle]="{ 'background-color': backgroundColor }"
->
-  {{ label }}
-</button>`,
+  selector: 'mds-button',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class ButtonComponent {
@@ -22,13 +15,21 @@ export class ButtonComponent {
   @Input()
   primary = false;
 
-  /** What background color to use */
+  /** Should the button be small? */
   @Input()
-  backgroundColor?: string;
+  small = false;
 
-  /** How large should the button be? */
+  /** Should the button be large? */
   @Input()
-  size: 'sm' | 'std' | 'lg' = 'std';
+  large = false;
+
+  /**
+   * Is this button disabled?
+   *
+   * @default false
+   */
+  @Input()
+  isDisabled = false;
 
   /**
    * Button contents
@@ -36,7 +37,7 @@ export class ButtonComponent {
    * @required
    */
   @Input()
-  label = 'Button';
+  label = '';
 
   /** Optional click handler */
   @Output()
@@ -44,7 +45,8 @@ export class ButtonComponent {
 
   public get classes(): string[] {
     const mode = this.primary ? 'btn-primary' : 'btn-secondary';
+    const size = this.small ? 'btn-sm' : this.large ? 'btn-lg' : '';
 
-    return ['btn', `btn-${this.size}`, mode];
+    return ['btn', mode, size];
   }
 }

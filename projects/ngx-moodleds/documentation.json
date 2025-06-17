@@ -11,6 +11,16 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ngx-moodleds/src/button/button.component.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: \"Button\",\n    small: false,\n    large: false,\n    isDisabled: true\n  }\n}"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -18,7 +28,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'lg',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: false,\n    large: true,\n    isDisabled: false,\n  },\n}"
             },
             {
                 "name": "meta",
@@ -28,7 +38,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
+                "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
             },
             {
                 "name": "preview",
@@ -48,7 +58,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: false,\n    large: false,\n    isDisabled: false,\n  },\n}"
             },
             {
                 "name": "Secondary",
@@ -58,7 +68,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    primary: false,\n    label: 'Button',\n    small: false,\n    large: false,\n    isDisabled: false,\n  },\n}"
             },
             {
                 "name": "Small",
@@ -68,7 +78,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'sm',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: true,\n    large: false,\n    isDisabled: false,\n  },\n}"
             }
         ],
         "functions": [],
@@ -89,6 +99,16 @@
         "groupedVariables": {
             "projects/ngx-moodleds/src/button/button.component.stories.ts": [
                 {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ngx-moodleds/src/button/button.component.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: \"Button\",\n    small: false,\n    large: false,\n    isDisabled: true\n  }\n}"
+                },
+                {
                     "name": "Large",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
@@ -96,7 +116,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'lg',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: false,\n    large: true,\n    isDisabled: false,\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -106,7 +126,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
+                    "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
                 },
                 {
                     "name": "Primary",
@@ -116,7 +136,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: false,\n    large: false,\n    isDisabled: false,\n  },\n}"
                 },
                 {
                     "name": "Secondary",
@@ -126,7 +146,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    primary: false,\n    label: 'Button',\n    small: false,\n    large: false,\n    isDisabled: false,\n  },\n}"
                 },
                 {
                     "name": "Small",
@@ -136,7 +156,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'sm',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n    small: true,\n    large: false,\n    isDisabled: false,\n  },\n}"
                 }
             ],
             "projects/ngx-moodleds/.storybook/preview.ts": [
@@ -181,6 +201,16 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ngx-moodleds/src/button/button.component.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
