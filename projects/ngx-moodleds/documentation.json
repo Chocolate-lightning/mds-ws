@@ -18,7 +18,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    size: 'lg',\n    label: 'Button',\n  },\n}"
             },
             {
                 "name": "meta",
@@ -68,7 +68,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\n  args: {\n    size: 'sm',\n    label: 'Button',\n  },\n}"
             }
         ],
         "functions": [],
@@ -96,7 +96,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    size: 'lg',\n    label: 'Button',\n  },\n}"
                 },
                 {
                     "name": "meta",
@@ -136,7 +136,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\n  args: {\n    size: 'sm',\n    label: 'Button',\n  },\n}"
                 }
             ],
             "projects/ngx-moodleds/.storybook/preview.ts": [

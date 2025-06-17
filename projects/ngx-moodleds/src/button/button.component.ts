@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'storybook-button',
-  standalone: true,
-  imports: [CommonModule],
+  selector: 'mds-btn',
+  imports: [CommonModule, NgbModule],
+  // templateUrl: './button.component.html',
   template: ` <button
   type="button"
   (click)="onClick.emit($event)"
@@ -13,8 +14,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 >
   {{ label }}
 </button>`,
-  styleUrls: ['./button.component.css'],
+  styleUrls: ['./button.component.scss'],
 })
+
 export class ButtonComponent {
   /** Is this the principal call to action on the page? */
   @Input()
@@ -26,7 +28,7 @@ export class ButtonComponent {
 
   /** How large should the button be? */
   @Input()
-  size: 'small' | 'medium' | 'large' = 'medium';
+  size: 'sm' | 'std' | 'lg' = 'std';
 
   /**
    * Button contents
@@ -41,8 +43,8 @@ export class ButtonComponent {
   onClick = new EventEmitter<Event>();
 
   public get classes(): string[] {
-    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+    const mode = this.primary ? 'btn-primary' : 'btn-secondary';
 
-    return ['storybook-button', `storybook-button--${this.size}`, mode];
+    return ['btn', `btn-${this.size}`, mode];
   }
 }
