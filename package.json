@@ -33,6 +33,7 @@
     "@angular/localize": "^19.2.14",
     "@chromatic-com/storybook": "^4.0.0",
     "@compodoc/compodoc": "^1.1.26",
+    "@storybook/addon-a11y": "^9.0.11",
     "@storybook/addon-docs": "^9.0.9",
     "@storybook/angular": "^9.0.9",
     "@types/jasmine": "~5.1.0",

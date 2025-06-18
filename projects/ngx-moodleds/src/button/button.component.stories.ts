@@ -1,9 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { fn } from 'storybook/test';
-
 import { ButtonComponent } from './button.component';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
+/**
+ * ## Fake Header to show that Markdown works in the UI with autodocs
+ * Top level documentation for the Button component.
+ *
+ * Buttons are used in many places in the application to trigger actions or navigate.
+ *
+ * Badges also work when parsed through autodocs: <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+ */
 const meta: Meta<ButtonComponent> = {
   title: 'Component/Button',
   component: ButtonComponent,
@@ -18,6 +25,9 @@ export default meta;
 type Story = StoryObj<ButtonComponent>;
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+/**
+ * Example of a primary button and autodocs throwing this to the UI.
+ */
 export const Primary: Story = {
   args: {
     primary: true,
@@ -28,6 +38,9 @@ export const Primary: Story = {
   },
 };
 
+/**
+ * Example of a Secondary button and autodocs throwing this to the UI.
+ */
 export const Secondary: Story = {
   args: {
     primary: false,
@@ -38,6 +51,9 @@ export const Secondary: Story = {
   },
 };
 
+/**
+ * Example of a Large button and autodocs throwing this to the UI.
+ */
 export const Large: Story = {
   args: {
     primary: true,
@@ -48,6 +64,9 @@ export const Large: Story = {
   },
 };
 
+/**
+ * Example of a Small button and autodocs throwing this to the UI.
+ */
 export const Small: Story = {
   args: {
     primary: true,
@@ -58,6 +77,9 @@ export const Small: Story = {
   },
 };
 
+/**
+ * Example of a Disabled button and autodocs throwing this to the UI.
+ */
 export const Disabled: Story = {
   args: {
     primary: true,

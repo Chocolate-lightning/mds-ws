@@ -4,7 +4,11 @@ const config: StorybookConfig = {
   "stories": [
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
-  "addons": ["@storybook/addon-docs", "@chromatic-com/storybook"],
+  "addons": [
+    "@storybook/addon-docs",
+    "@chromatic-com/storybook",
+    "@storybook/addon-a11y"
+  ],
   "framework": {
     "name": "@storybook/angular",
     "options": {}
