@@ -3,19 +3,21 @@ import { fn } from 'storybook/test';
 import { ButtonComponent } from './button.component';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
-/**
- * ## Fake Header to show that Markdown works in the UI with autodocs
- * Top level documentation for the Button component.
- *
- * Buttons are used in many places in the application to trigger actions or navigate.
- *
- * Badges also work when parsed through autodocs: <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
- */
 const meta: Meta<ButtonComponent> = {
   title: 'Component/Button',
   component: ButtonComponent,
   tags: ['autodocs'],
   argTypes: {
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: 'Buttons are used in many places in the application to trigger actions or navigate.' +
+          'Badges also work when parsed through autodocs: <a href="#"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>',
+      },
+      subtitle: 'Button Component Subtitle',
+      // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page
+    }
   },
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
   args: { onClick: fn() },
