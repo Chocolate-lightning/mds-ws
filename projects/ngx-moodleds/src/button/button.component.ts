@@ -1,52 +1,58 @@
-import { CommonModule } from '@angular/common';
-import {Component, Input, Output, EventEmitter, ViewEncapsulation} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Component, EventEmitter, Input, Output, ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'mds-button',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss'],
-  encapsulation: ViewEncapsulation.None
+    selector: 'mds-button',
+    standalone: true,
+    imports: [CommonModule],
+    templateUrl: './button.component.html',
+    styleUrls: ['./button.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 
 export class ButtonComponent {
-  /** Is this the principal call to action on the page? */
-  @Input()
-  primary = false;
+    /**
+     * Button contents
+     *
+     * @required
+     */
+    @Input()
+    label = '';
 
-  /** Should the button be small? */
-  @Input()
-  small = false;
+    /** Is this the principal call to action on the page? */
+    @Input()
+    primary = false;
 
-  /** Should the button be large? */
-  @Input()
-  large = false;
+    /** Should the button be small? */
+    @Input()
+    small = false;
 
-  /**
-   * Is this button disabled?
-   *
-   * @default false
-   */
-  @Input()
-  isDisabled = false;
+    /** Should the button be large? */
+    @Input()
+    large = false;
 
-  /**
-   * Button contents
-   *
-   * @required
-   */
-  @Input()
-  label = '';
+    /**
+     * Is this button disabled?
+     *
+     * @default false
+     */
+    @Input()
+    isDisabled = false;
 
-  /** Optional click handler */
-  @Output()
-  onClick = new EventEmitter<Event>();
+    /**
+     * Button type
+     */
+    @Input()
+    type = 'submit';
 
-  public get classes(): string[] {
-    const mode = this.primary ? 'btn-primary' : 'btn-secondary';
-    const size = this.small ? 'btn-sm' : this.large ? 'btn-lg' : '';
+    /** Optional click handler */
+    @Output()
+    onClick = new EventEmitter<Event>();
 
-    return ['btn', mode, size];
-  }
+    public get classes(): string[] {
+        const mode = this.primary ? 'btn-primary' : 'btn-secondary';
+        const size = this.small ? 'btn-sm' : this.large ? 'btn-lg' : '';
+
+        return ['btn', mode, size];
+    }
 }

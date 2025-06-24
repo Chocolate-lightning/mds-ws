@@ -6,7 +6,6 @@ TODO: Get copy from Mick & Julia.
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
-
 ## Preferred Languages
 
 We prefer all communications to be in English.

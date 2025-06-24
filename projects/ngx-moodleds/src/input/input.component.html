@@ -1,0 +1,8 @@
+<label [for]="id">{{ placeholder }}</label>
+<input [id]="id" [ngClass]="classes" [type]="type" [placeholder]="placeholder" [readOnly]="isDisabled" [required]="isRequired"/>
+<!--<div class="valid-feedback">
+    {{placeholder}} field is valid. You can proceed with the next step.
+</div>-->
+<div class="invalid-feedback">
+    Please enter your {{ placeholder }}.
+</div>

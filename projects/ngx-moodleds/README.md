@@ -23,14 +23,6 @@ We highly recommend that you read our [TODO: design system contributions guide](
 
 TODO: Add instructions for installing the design system locally.
 
-
-
-
-
-
-
-
-
 ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
