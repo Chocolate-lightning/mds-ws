@@ -1,13 +1,5 @@
 # MoodleWs
 
-
-
-
-
-
-
-
-
 ## Building
 
 To build the project run:
