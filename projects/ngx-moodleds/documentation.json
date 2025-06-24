@@ -42,9 +42,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  parameters: {\n    docs: {\n      description: {\n        component: 'Buttons are used in many places in the application to trigger actions or navigate.',\n      },\n      // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page\n      docsPage: {\n        title: 'Button Component',\n        description: 'This is a button component that can be used to trigger actions or navigate.',\n      },\n    }\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}",
-                "rawdescription": "## Fake Header to show that Markdown works in the UI with autodocs\nTop level documentation for the Button component.\n\nButtons are used in many places in the application to trigger actions or navigate.\n\nBadges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a>",
-                "description": "<h2>Fake Header to show that Markdown works in the UI with autodocs</h2>\n<p>Top level documentation for the Button component.</p>\n<p>Buttons are used in many places in the application to trigger actions or navigate.</p>\n<p>Badges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a></p>\n"
+                "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  parameters: {\n    docs: {\n      description: {\n        component: 'Buttons are used in many places in the application to trigger actions or navigate.' +\n          'Badges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a>',\n      },\n      subtitle: 'Button Component Subtitle',\n      // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page\n    }\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
             },
             {
                 "name": "preview",
@@ -142,9 +140,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  parameters: {\n    docs: {\n      description: {\n        component: 'Buttons are used in many places in the application to trigger actions or navigate.',\n      },\n      // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page\n      docsPage: {\n        title: 'Button Component',\n        description: 'This is a button component that can be used to trigger actions or navigate.',\n      },\n    }\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}",
-                    "rawdescription": "## Fake Header to show that Markdown works in the UI with autodocs\nTop level documentation for the Button component.\n\nButtons are used in many places in the application to trigger actions or navigate.\n\nBadges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a>",
-                    "description": "<h2>Fake Header to show that Markdown works in the UI with autodocs</h2>\n<p>Top level documentation for the Button component.</p>\n<p>Buttons are used in many places in the application to trigger actions or navigate.</p>\n<p>Badges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a></p>\n"
+                    "defaultValue": "{\n  title: 'Component/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  argTypes: {\n  },\n  parameters: {\n    docs: {\n      description: {\n        component: 'Buttons are used in many places in the application to trigger actions or navigate.' +\n          'Badges also work when parsed through autodocs: <a href=\"#\"><img src=\"https://img.shields.io/badge/PRs-welcome-brightgreen.svg\" alt=\"PRs Welcome\"></a>',\n      },\n      subtitle: 'Button Component Subtitle',\n      // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page\n    }\n  },\n  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args\n  args: { onClick: fn() },\n}"
                 },
                 {
                     "name": "Primary",
@@ -216,7 +212,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 75,
+        "count": 62,
         "status": "good",
         "files": [
             {
@@ -255,9 +251,9 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
-                "coveragePercent": 100,
-                "coverageCount": "1/1",
-                "status": "very-good"
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
             },
             {
                 "filePath": "projects/ngx-moodleds/src/button/button.component.stories.ts",
