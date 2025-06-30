@@ -3,7 +3,8 @@ name: "Chromatic"
 on: push
 
 jobs:
-    chromatic:
+    # Run visual and composition tests with Chromatic
+    visual-and-composition:
         name: Run Chromatic
         runs-on: ubuntu-latest
         steps:

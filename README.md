@@ -2,6 +2,9 @@
 
 [![npm version](https://badge.fury.io/js/ngx-moodleds.svg)](https://badge.fury.io/js/ngx-moodleds)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Angular Build](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/node.js.yml/badge.svg)](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/node.js.yml)
+[![Run Angular CLI Update](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/ng-update.yml/badge.svg)](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/ng-update.yml)
+[![Chromatic](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/chromatic.yml/badge.svg)](https://github.com/Chocolate-lightning/mds-ws/actions/workflows/chromatic.yml)
 
 # Getting Started
 

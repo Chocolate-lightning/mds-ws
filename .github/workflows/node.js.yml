@@ -1,6 +1,5 @@
 name: Angular Build
 
-# {1}
 on:
     push:
         branches: [ "main" ]
@@ -8,7 +7,7 @@ on:
         branches: [ "main" ]
 
 jobs:
-    angular:
+    tests-and-build:
         name: Angular Build
         runs-on: ubuntu-latest
         strategy:
@@ -16,24 +15,17 @@ jobs:
                 node-version: [20]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
-            # {2}
             - name: Checkout the source code
               uses: actions/checkout@v4
-
-            # {3}
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: 'npm'
                   cache-dependency-path: package-lock.json
-
-            # {4}
             - name: Install dependencies
               run: npm ci
-            # {5}
             - name: Run tests
               run: npm run test:ci
-            # {6}
             - name: Build
               run: npm run build
