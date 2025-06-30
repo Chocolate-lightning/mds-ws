@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/angular';
+import {componentWrapperDecorator, Meta, StoryObj} from '@storybook/angular';
 import {expect} from 'storybook/test';
 import {LoginComponent} from './login.component';
 
@@ -7,7 +7,6 @@ const meta: Meta<LoginComponent> = {
     title: 'Component/Login',
     component: LoginComponent,
     tags: ['autodocs'],
-    argTypes: {},
     parameters: {
         docs: {
             description: {
@@ -17,7 +16,7 @@ const meta: Meta<LoginComponent> = {
             // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page
         }
     },
-    args: {},
+    decorators: [componentWrapperDecorator((story) => `<div style="margin: 1rem">${story}</div>`)],
 };
 
 export default meta;

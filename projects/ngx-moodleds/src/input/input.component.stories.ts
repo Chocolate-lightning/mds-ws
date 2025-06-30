@@ -1,4 +1,4 @@
-import type {Meta, StoryObj} from '@storybook/angular';
+import {componentWrapperDecorator, Meta, StoryObj} from '@storybook/angular';
 import {InputComponent} from './input.component';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
@@ -16,6 +16,7 @@ const meta: Meta<InputComponent> = {
             // More on how to use DocsPage: https://storybook.js.org/docs/writing-docs/docs-page
         }
     },
+    decorators: [componentWrapperDecorator((story) => `<div style="margin: 1rem">${story}</div>`)],
     args: {},
 };
 

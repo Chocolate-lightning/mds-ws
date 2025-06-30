@@ -16,47 +16,31 @@ export class InputComponent {
      *
      * @required
      */
-    @Input()
-    type = 'text';
-
+    @Input() type = 'text';
     /**
      * input ID
      *
      * @required
      */
-    @Input()
-    id = '';
-
+    @Input() id = '';
     /** Should the input be small? */
-    @Input()
-    small = false;
-
+    @Input() small = false;
     /** Should the input be large? */
-    @Input()
-    large = false;
-
+    @Input() large = false;
     /**
      * Is this input disabled?
      *
      * @default false
      */
-    @Input()
-    isDisabled = false;
-
+    @Input() isDisabled = false;
     /**
      * Is this input required?
      *
      * @default false
      */
-    @Input()
-    isRequired = false;
-
-    /**
-     * Input contents
-     *
-     */
-    @Input()
-    placeholder = '';
+    @Input() isRequired = false;
+    /** Input contents */
+    @Input() placeholder = '';
 
     public get classes(): string[] {
         const size = this.small ? 'form-control-sm' : this.large ? 'form-control-lg' : '';
