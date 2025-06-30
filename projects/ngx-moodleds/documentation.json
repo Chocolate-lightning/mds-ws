@@ -136,7 +136,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n    args: {\n        type: 'submit',\n        primary: true,\n        label: 'Button',\n        small: false,\n        large: false,\n        isDisabled: false,\n    },\n}",
+                "defaultValue": "{\n    args: {\n        type: 'submit',\n        primary: true,\n        label: 'Button',\n        small: false,\n        large: false,\n        isDisabled: false,\n    },\n    parameters: {\n        design: {\n            type: \"figma\",\n            url: \"https://www.figma.com/design/ELlwK6Av6kDgaqbHY8hmJf/%F0%9F%9A%A7-Moodle-4-Design-System-v2.0?node-id=255-686&t=xGosx6UtxIfysc7K-4\",\n        },\n    },\n}",
                 "rawdescription": "Example of a primary button and autodocs throwing this to the UI.",
                 "description": "<p>Example of a primary button and autodocs throwing this to the UI.</p>\n"
             },
@@ -270,7 +270,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n    args: {\n        type: 'submit',\n        primary: true,\n        label: 'Button',\n        small: false,\n        large: false,\n        isDisabled: false,\n    },\n}",
+                    "defaultValue": "{\n    args: {\n        type: 'submit',\n        primary: true,\n        label: 'Button',\n        small: false,\n        large: false,\n        isDisabled: false,\n    },\n    parameters: {\n        design: {\n            type: \"figma\",\n            url: \"https://www.figma.com/design/ELlwK6Av6kDgaqbHY8hmJf/%F0%9F%9A%A7-Moodle-4-Design-System-v2.0?node-id=255-686&t=xGosx6UtxIfysc7K-4\",\n        },\n    },\n}",
                     "rawdescription": "Example of a primary button and autodocs throwing this to the UI.",
                     "description": "<p>Example of a primary button and autodocs throwing this to the UI.</p>\n"
                 },

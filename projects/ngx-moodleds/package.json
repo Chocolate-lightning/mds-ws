@@ -1,15 +1,31 @@
 {
-    "name": "ngx-moodleds",
-    "version": "0.0.1",
-    "peerDependencies": {
-        "@angular/common": "^20.0.4",
-        "@angular/core": "^20.0.4",
-        "@ng-bootstrap/ng-bootstrap": "^19.0.0",
-        "@popperjs/core": "^2.11.8",
-        "bootstrap": "^5.3.6"
-    },
-    "dependencies": {
-        "tslib": "^2.3.0"
-    },
-    "sideEffects": false
+  "name": "moodle/ngx-moodleds",
+  "version": "0.0.1",
+  "description": "Moodle Design System (MDS) components for Angular applications, built on top of Angular and Bootstrap.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chocolate-lightning/mds-ws"
+  },
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "Moodle design",
+    "components"
+  ],
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Chocolate-lightning/mds-ws/issues"
+  },
+  "homepage": "https://github.com/Chocolate-lightning/mds-ws",
+  "peerDependencies": {
+    "@angular/common": "^20.0.4",
+    "@angular/core": "^20.0.4",
+    "@ng-bootstrap/ng-bootstrap": "^19.0.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.6"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
 }

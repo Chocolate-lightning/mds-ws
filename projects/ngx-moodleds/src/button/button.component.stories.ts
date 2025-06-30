@@ -48,6 +48,12 @@ export const Primary: Story = {
         large: false,
         isDisabled: false,
     },
+    parameters: {
+        design: {
+            type: "figma",
+            url: "https://www.figma.com/design/ELlwK6Av6kDgaqbHY8hmJf/%F0%9F%9A%A7-Moodle-4-Design-System-v2.0?node-id=255-686&t=xGosx6UtxIfysc7K-4",
+        },
+    },
 };
 
 /**
